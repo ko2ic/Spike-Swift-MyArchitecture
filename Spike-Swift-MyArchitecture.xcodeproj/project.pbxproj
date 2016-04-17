@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E13CE2A1C85684F00042F60 /* TransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13CE271C85684F00042F60 /* TransitionState.swift */; };
+		1E13CE401C859E4700042F60 /* ForecastEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13CE3C1C859E4700042F60 /* ForecastEntity.swift */; };
+		1E13CE421C859E4700042F60 /* WeatherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13CE3E1C859E4700042F60 /* WeatherEntity.swift */; };
+		1E13CE441C859F4200042F60 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13CE431C859F4200042F60 /* Weather.swift */; };
+		1E13CE4B1C86904800042F60 /* WeatherRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13CE4A1C86904800042F60 /* WeatherRepositoryImpl.swift */; };
+		1E13CE4E1C8690A600042F60 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13CE4D1C8690A600042F60 /* WeatherService.swift */; };
+		1E13CE551C86BBBE00042F60 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13CE541C86BBBE00042F60 /* Exception.swift */; };
+		1E95DB021CBB629800938AA9 /* WeatherTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95DB011CBB629800938AA9 /* WeatherTest.swift */; };
+		70B0368DEEF390181CF474B2 /* Pods_Spike_Swift_MyArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827FD186B8312EA2A2CF05B6 /* Pods_Spike_Swift_MyArchitecture.framework */; };
+		7BB3FF543CB088E062CBA562 /* Pods_Spike_Swift_MyArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827FD186B8312EA2A2CF05B6 /* Pods_Spike_Swift_MyArchitecture.framework */; };
+		9F1531561CB40DB0004A964B /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1531521CB40DB0004A964B /* AppRepository.swift */; };
+		9F1531571CB40DB0004A964B /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1531531CB40DB0004A964B /* Storable.swift */; };
+		9F1531581CB40DB0004A964B /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1531541CB40DB0004A964B /* WeatherRepository.swift */; };
+		9F1531591CB40DB0004A964B /* ServiceLocatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1531551CB40DB0004A964B /* ServiceLocatorImpl.swift */; };
+		9F1E22E31C64F27F001BA633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1E22E21C64F27F001BA633 /* Assets.xcassets */; };
+		9F1E22F11C64F27F001BA633 /* Spike_Swift_MyArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E22F01C64F27F001BA633 /* Spike_Swift_MyArchitectureTests.swift */; };
+		9F1E22FC1C64F280001BA633 /* Spike_Swift_MyArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E22FB1C64F280001BA633 /* Spike_Swift_MyArchitectureUITests.swift */; };
+		9F1E23221C64F4C3001BA633 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E230A1C64F4C2001BA633 /* AppDelegate.swift */; };
+		9F1E232A1C64F4C3001BA633 /* FirstPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E231A1C64F4C2001BA633 /* FirstPresentor.swift */; };
+		9F1E232B1C64F4C3001BA633 /* FirstRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E231B1C64F4C2001BA633 /* FirstRouting.swift */; };
+		9F1E232C1C64F4C3001BA633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1E231C1C64F4C2001BA633 /* LaunchScreen.storyboard */; };
+		9F1E232D1C64F4C3001BA633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1E231D1C64F4C3001BA633 /* Main.storyboard */; };
+		9F1E232E1C64F4C3001BA633 /* SecondPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E231E1C64F4C3001BA633 /* SecondPresentor.swift */; };
+		9F1E232F1C64F4C3001BA633 /* SecondRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E231F1C64F4C3001BA633 /* SecondRouting.swift */; };
+		9F1E23301C64F4C3001BA633 /* ThirdPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E23201C64F4C3001BA633 /* ThirdPresentor.swift */; };
+		9F1E23311C64F4C3001BA633 /* ThirdRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E23211C64F4C3001BA633 /* ThirdRouting.swift */; };
+		9F602FA31CB56692000F0504 /* ApiErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F602FA21CB56692000F0504 /* ApiErrorHandler.swift */; };
+		9F602FA51CB56713000F0504 /* TransactionTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F602FA41CB56713000F0504 /* TransactionTemplate.swift */; };
+		9F602FA71CB92C2E000F0504 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F602FA61CB92C2E000F0504 /* Temperature.swift */; };
+		9F7236E11CB94B4600EA2F68 /* AppRepositoryWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7236E01CB94B4600EA2F68 /* AppRepositoryWrapper.swift */; };
+		9F7236E51CBAA31D00EA2F68 /* WeatherServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7236E41CBAA31D00EA2F68 /* WeatherServiceTest.swift */; };
+		9F7236E71CBAA66200EA2F68 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7236E61CBAA66200EA2F68 /* ServiceLocator.swift */; };
+		9F72370F1CBE7A4A00EA2F68 /* RealmWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72370E1CBE7A4A00EA2F68 /* RealmWrapper.swift */; };
+		9F7237111CC143B500EA2F68 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7237101CC143B500EA2F68 /* Device.swift */; };
+		9F8532501C9469AC002F8F5B /* Restable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F85324F1C9469AC002F8F5B /* Restable.swift */; };
+		9FCD0D871CAAD35400C418B4 /* AppRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD0D861CAAD35400C418B4 /* AppRepositoryImpl.swift */; };
+		9FCD0D891CAADDEB00C418B4 /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD0D881CAADDEB00C418B4 /* ApiCaller.swift */; };
+		9FCD0D8C1CABF9A500C418B4 /* ArrayTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD0D8B1CABF9A500C418B4 /* ArrayTransform.swift */; };
+		9FE2D3DD1CA5713F00FDDD6B /* TransactionTemplateImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE2D3DC1CA5713F00FDDD6B /* TransactionTemplateImpl.swift */; };
+		9FE2D3DF1CA580E300FDDD6B /* ApiErrorHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE2D3DE1CA580E300FDDD6B /* ApiErrorHandlerImpl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F1E22ED1C64F27F001BA633 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F1E22CE1C64F27F001BA633 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F1E22D51C64F27F001BA633;
+			remoteInfo = "Spike-Swift-MyArchitecture";
+		};
+		9F1E22F81C64F280001BA633 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F1E22CE1C64F27F001BA633 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F1E22D51C64F27F001BA633;
+			remoteInfo = "Spike-Swift-MyArchitecture";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E13CE271C85684F00042F60 /* TransitionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionState.swift; sourceTree = "<group>"; };
+		1E13CE3C1C859E4700042F60 /* ForecastEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastEntity.swift; sourceTree = "<group>"; };
+		1E13CE3E1C859E4700042F60 /* WeatherEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherEntity.swift; sourceTree = "<group>"; };
+		1E13CE431C859F4200042F60 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		1E13CE4A1C86904800042F60 /* WeatherRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryImpl.swift; sourceTree = "<group>"; };
+		1E13CE4D1C8690A600042F60 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		1E13CE541C86BBBE00042F60 /* Exception.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exception.swift; sourceTree = "<group>"; };
+		1E95DB011CBB629800938AA9 /* WeatherTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTest.swift; sourceTree = "<group>"; };
+		255462B531EB1DA712FE8FC0 /* Pods-Spike-Swift-MyArchitecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spike-Swift-MyArchitecture.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spike-Swift-MyArchitecture/Pods-Spike-Swift-MyArchitecture.release.xcconfig"; sourceTree = "<group>"; };
+		82365FE123638C4A7A5196A3 /* Pods_Spike_Swift_MyArchitectureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spike_Swift_MyArchitectureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		827FD186B8312EA2A2CF05B6 /* Pods_Spike_Swift_MyArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spike_Swift_MyArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F1531521CB40DB0004A964B /* AppRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRepository.swift; sourceTree = "<group>"; };
+		9F1531531CB40DB0004A964B /* Storable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
+		9F1531541CB40DB0004A964B /* WeatherRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
+		9F1531551CB40DB0004A964B /* ServiceLocatorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocatorImpl.swift; sourceTree = "<group>"; };
+		9F1E22D61C64F27F001BA633 /* Spike-Swift-MyArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spike-Swift-MyArchitecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F1E22E21C64F27F001BA633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F1E22E71C64F27F001BA633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F1E22EC1C64F27F001BA633 /* Spike-Swift-MyArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spike-Swift-MyArchitectureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F1E22F01C64F27F001BA633 /* Spike_Swift_MyArchitectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spike_Swift_MyArchitectureTests.swift; sourceTree = "<group>"; };
+		9F1E22F21C64F27F001BA633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F1E22F71C64F27F001BA633 /* Spike-Swift-MyArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spike-Swift-MyArchitectureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F1E22FB1C64F280001BA633 /* Spike_Swift_MyArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spike_Swift_MyArchitectureUITests.swift; sourceTree = "<group>"; };
+		9F1E22FD1C64F280001BA633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F1E23091C64F4C2001BA633 /* Spike-Swift-MyArchitecture-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spike-Swift-MyArchitecture-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F1E230A1C64F4C2001BA633 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F1E231A1C64F4C2001BA633 /* FirstPresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPresentor.swift; sourceTree = "<group>"; };
+		9F1E231B1C64F4C2001BA633 /* FirstRouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstRouting.swift; sourceTree = "<group>"; };
+		9F1E231C1C64F4C2001BA633 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F1E231D1C64F4C3001BA633 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9F1E231E1C64F4C3001BA633 /* SecondPresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPresentor.swift; sourceTree = "<group>"; };
+		9F1E231F1C64F4C3001BA633 /* SecondRouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondRouting.swift; sourceTree = "<group>"; };
+		9F1E23201C64F4C3001BA633 /* ThirdPresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPresentor.swift; sourceTree = "<group>"; };
+		9F1E23211C64F4C3001BA633 /* ThirdRouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdRouting.swift; sourceTree = "<group>"; };
+		9F602FA21CB56692000F0504 /* ApiErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiErrorHandler.swift; sourceTree = "<group>"; };
+		9F602FA41CB56713000F0504 /* TransactionTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTemplate.swift; sourceTree = "<group>"; };
+		9F602FA61CB92C2E000F0504 /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		9F7236E01CB94B4600EA2F68 /* AppRepositoryWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRepositoryWrapper.swift; sourceTree = "<group>"; };
+		9F7236E41CBAA31D00EA2F68 /* WeatherServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherServiceTest.swift; path = "Spike-Swift-MyArchitectureTests/Applications/Services/WeatherServiceTest.swift"; sourceTree = SOURCE_ROOT; };
+		9F7236E61CBAA66200EA2F68 /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		9F72370E1CBE7A4A00EA2F68 /* RealmWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmWrapper.swift; sourceTree = "<group>"; };
+		9F7237101CC143B500EA2F68 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		9F85324F1C9469AC002F8F5B /* Restable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restable.swift; sourceTree = "<group>"; };
+		9FCD0D861CAAD35400C418B4 /* AppRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRepositoryImpl.swift; sourceTree = "<group>"; };
+		9FCD0D881CAADDEB00C418B4 /* ApiCaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
+		9FCD0D8B1CABF9A500C418B4 /* ArrayTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTransform.swift; sourceTree = "<group>"; };
+		9FE2D3DC1CA5713F00FDDD6B /* TransactionTemplateImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTemplateImpl.swift; sourceTree = "<group>"; };
+		9FE2D3DE1CA580E300FDDD6B /* ApiErrorHandlerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiErrorHandlerImpl.swift; sourceTree = "<group>"; };
+		BE2A778BCC3ED2D2A163C45B /* Pods-Spike-Swift-MyArchitecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spike-Swift-MyArchitecture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spike-Swift-MyArchitecture/Pods-Spike-Swift-MyArchitecture.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F1E22D31C64F27F001BA633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB3FF543CB088E062CBA562 /* Pods_Spike_Swift_MyArchitecture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F1E22E91C64F27F001BA633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70B0368DEEF390181CF474B2 /* Pods_Spike_Swift_MyArchitecture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F1E22F41C64F27F001BA633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B7938CFCD0C9F27479712CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE2A778BCC3ED2D2A163C45B /* Pods-Spike-Swift-MyArchitecture.debug.xcconfig */,
+				255462B531EB1DA712FE8FC0 /* Pods-Spike-Swift-MyArchitecture.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1E13CE211C85684F00042F60 /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				9F1531501CB40DB0004A964B /* Infrastructures */,
+				1E13CE241C85684F00042F60 /* Models */,
+				1E13CE261C85684F00042F60 /* ValueObject */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		1E13CE241C85684F00042F60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E13CE431C859F4200042F60 /* Weather.swift */,
+				1E13CE3A1C859E4700042F60 /* Entities */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1E13CE261C85684F00042F60 /* ValueObject */ = {
+			isa = PBXGroup;
+			children = (
+				9F602FA61CB92C2E000F0504 /* Temperature.swift */,
+				1E13CE271C85684F00042F60 /* TransitionState.swift */,
+				1E13CE541C86BBBE00042F60 /* Exception.swift */,
+				9F7237101CC143B500EA2F68 /* Device.swift */,
+			);
+			path = ValueObject;
+			sourceTree = "<group>";
+		};
+		1E13CE2B1C8568A600042F60 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				9F602FA01CB56133000F0504 /* Infrastructures */,
+				1E13CE4C1C8690A600042F60 /* Services */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		1E13CE3A1C859E4700042F60 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9FCD0D8A1CABF9A500C418B4 /* Converter */,
+				1E13CE3E1C859E4700042F60 /* WeatherEntity.swift */,
+				1E13CE3C1C859E4700042F60 /* ForecastEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		1E13CE491C86904800042F60 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9F85324E1C94699D002F8F5B /* Http */,
+				9FCD0D861CAAD35400C418B4 /* AppRepositoryImpl.swift */,
+				1E13CE4A1C86904800042F60 /* WeatherRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		1E13CE4C1C8690A600042F60 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1E13CE4D1C8690A600042F60 /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1E95DAFF1CBB628000938AA9 /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				1E95DB001CBB628000938AA9 /* Models */,
+			);
+			name = Domains;
+			path = "Spike-Swift-MyArchitectureTests/Domains";
+			sourceTree = SOURCE_ROOT;
+		};
+		1E95DB001CBB628000938AA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E95DB011CBB629800938AA9 /* WeatherTest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F1531501CB40DB0004A964B /* Infrastructures */ = {
+			isa = PBXGroup;
+			children = (
+				9F1531511CB40DB0004A964B /* Protocol */,
+				9F7236E61CBAA66200EA2F68 /* ServiceLocator.swift */,
+				9F1531551CB40DB0004A964B /* ServiceLocatorImpl.swift */,
+				9F7236E01CB94B4600EA2F68 /* AppRepositoryWrapper.swift */,
+			);
+			path = Infrastructures;
+			sourceTree = "<group>";
+		};
+		9F1531511CB40DB0004A964B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9F1531521CB40DB0004A964B /* AppRepository.swift */,
+				9F1531531CB40DB0004A964B /* Storable.swift */,
+				9F1531541CB40DB0004A964B /* WeatherRepository.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9F1E22CD1C64F27F001BA633 = {
+			isa = PBXGroup;
+			children = (
+				9F1E22D81C64F27F001BA633 /* Spike-Swift-MyArchitecture */,
+				9F1E22EF1C64F27F001BA633 /* Spike-Swift-MyArchitectureTests */,
+				9F1E22FA1C64F280001BA633 /* Spike-Swift-MyArchitectureUITests */,
+				9F1E22D71C64F27F001BA633 /* Products */,
+				0B7938CFCD0C9F27479712CA /* Pods */,
+				A48F4228A6E0D78523919A8D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F1E22D71C64F27F001BA633 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F1E22D61C64F27F001BA633 /* Spike-Swift-MyArchitecture.app */,
+				9F1E22EC1C64F27F001BA633 /* Spike-Swift-MyArchitectureTests.xctest */,
+				9F1E22F71C64F27F001BA633 /* Spike-Swift-MyArchitectureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F1E22D81C64F27F001BA633 /* Spike-Swift-MyArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+				9F1E230A1C64F4C2001BA633 /* AppDelegate.swift */,
+				9F1E23181C64F4C2001BA633 /* UserInterface */,
+				1E13CE2B1C8568A600042F60 /* Applications */,
+				9F1E230B1C64F4C2001BA633 /* Infrastructures */,
+				1E13CE211C85684F00042F60 /* Domains */,
+				9F1E22E21C64F27F001BA633 /* Assets.xcassets */,
+				9F1E22E71C64F27F001BA633 /* Info.plist */,
+				9F1E23091C64F4C2001BA633 /* Spike-Swift-MyArchitecture-Bridging-Header.h */,
+			);
+			path = "Spike-Swift-MyArchitecture";
+			sourceTree = "<group>";
+		};
+		9F1E22EF1C64F27F001BA633 /* Spike-Swift-MyArchitectureTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E95DAFF1CBB628000938AA9 /* Domains */,
+				9F7236E21CBAA2E400EA2F68 /* Applications */,
+				9F1E22F01C64F27F001BA633 /* Spike_Swift_MyArchitectureTests.swift */,
+				9F1E22F21C64F27F001BA633 /* Info.plist */,
+			);
+			path = "Spike-Swift-MyArchitectureTests";
+			sourceTree = "<group>";
+		};
+		9F1E22FA1C64F280001BA633 /* Spike-Swift-MyArchitectureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F1E22FB1C64F280001BA633 /* Spike_Swift_MyArchitectureUITests.swift */,
+				9F1E22FD1C64F280001BA633 /* Info.plist */,
+			);
+			path = "Spike-Swift-MyArchitectureUITests";
+			sourceTree = "<group>";
+		};
+		9F1E230B1C64F4C2001BA633 /* Infrastructures */ = {
+			isa = PBXGroup;
+			children = (
+				9FE2D3DB1CA5711F00FDDD6B /* Services */,
+				1E13CE491C86904800042F60 /* Repositories */,
+			);
+			path = Infrastructures;
+			sourceTree = "<group>";
+		};
+		9F1E23181C64F4C2001BA633 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				9F1E23191C64F4C2001BA633 /* Controls */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		9F1E23191C64F4C2001BA633 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				9F1E231C1C64F4C2001BA633 /* LaunchScreen.storyboard */,
+				9F1E231D1C64F4C3001BA633 /* Main.storyboard */,
+				9F1E231B1C64F4C2001BA633 /* FirstRouting.swift */,
+				9F1E231A1C64F4C2001BA633 /* FirstPresentor.swift */,
+				9F1E231F1C64F4C3001BA633 /* SecondRouting.swift */,
+				9F1E231E1C64F4C3001BA633 /* SecondPresentor.swift */,
+				9F1E23211C64F4C3001BA633 /* ThirdRouting.swift */,
+				9F1E23201C64F4C3001BA633 /* ThirdPresentor.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		9F602FA01CB56133000F0504 /* Infrastructures */ = {
+			isa = PBXGroup;
+			children = (
+				9F602FA11CB5615A000F0504 /* Protocol */,
+			);
+			path = Infrastructures;
+			sourceTree = "<group>";
+		};
+		9F602FA11CB5615A000F0504 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9F602FA21CB56692000F0504 /* ApiErrorHandler.swift */,
+				9F602FA41CB56713000F0504 /* TransactionTemplate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9F7236E21CBAA2E400EA2F68 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				9F7236E31CBAA2E400EA2F68 /* Services */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		9F7236E31CBAA2E400EA2F68 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9F7236E41CBAA31D00EA2F68 /* WeatherServiceTest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9F85324E1C94699D002F8F5B /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				9F85324F1C9469AC002F8F5B /* Restable.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		9FCD0D8A1CABF9A500C418B4 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				9FCD0D8B1CABF9A500C418B4 /* ArrayTransform.swift */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		9FE2D3DB1CA5711F00FDDD6B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9FE2D3DC1CA5713F00FDDD6B /* TransactionTemplateImpl.swift */,
+				9F72370E1CBE7A4A00EA2F68 /* RealmWrapper.swift */,
+				9FE2D3DE1CA580E300FDDD6B /* ApiErrorHandlerImpl.swift */,
+				9FCD0D881CAADDEB00C418B4 /* ApiCaller.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A48F4228A6E0D78523919A8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				827FD186B8312EA2A2CF05B6 /* Pods_Spike_Swift_MyArchitecture.framework */,
+				82365FE123638C4A7A5196A3 /* Pods_Spike_Swift_MyArchitectureTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F1E22D51C64F27F001BA633 /* Spike-Swift-MyArchitecture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F1E23001C64F280001BA633 /* Build configuration list for PBXNativeTarget "Spike-Swift-MyArchitecture" */;
+			buildPhases = (
+				025EC8D900933E2B1D52880C /* Check Pods Manifest.lock */,
+				9F1E22D21C64F27F001BA633 /* Sources */,
+				9F1E22D31C64F27F001BA633 /* Frameworks */,
+				9F1E22D41C64F27F001BA633 /* Resources */,
+				CC33C4CF922D9C9E9469AE09 /* Embed Pods Frameworks */,
+				F315ECA3AEB95F3D03C14813 /* Copy Pods Resources */,
+				9FCD0D851CA6D75B00C418B4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spike-Swift-MyArchitecture";
+			productName = "Spike-Swift-MyArchitecture";
+			productReference = 9F1E22D61C64F27F001BA633 /* Spike-Swift-MyArchitecture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F1E22EB1C64F27F001BA633 /* Spike-Swift-MyArchitectureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F1E23031C64F280001BA633 /* Build configuration list for PBXNativeTarget "Spike-Swift-MyArchitectureTests" */;
+			buildPhases = (
+				637D307D1EC074F64CBC0F06 /* Check Pods Manifest.lock */,
+				9F1E22E81C64F27F001BA633 /* Sources */,
+				9F1E22E91C64F27F001BA633 /* Frameworks */,
+				9F1E22EA1C64F27F001BA633 /* Resources */,
+				9EFCA365D17EFF34F1912B30 /* Embed Pods Frameworks */,
+				12BA20C5E674FC95FA1FF546 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F1E22EE1C64F27F001BA633 /* PBXTargetDependency */,
+			);
+			name = "Spike-Swift-MyArchitectureTests";
+			productName = "Spike-Swift-MyArchitectureTests";
+			productReference = 9F1E22EC1C64F27F001BA633 /* Spike-Swift-MyArchitectureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F1E22F61C64F27F001BA633 /* Spike-Swift-MyArchitectureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F1E23061C64F280001BA633 /* Build configuration list for PBXNativeTarget "Spike-Swift-MyArchitectureUITests" */;
+			buildPhases = (
+				9F1E22F31C64F27F001BA633 /* Sources */,
+				9F1E22F41C64F27F001BA633 /* Frameworks */,
+				9F1E22F51C64F27F001BA633 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F1E22F91C64F280001BA633 /* PBXTargetDependency */,
+			);
+			name = "Spike-Swift-MyArchitectureUITests";
+			productName = "Spike-Swift-MyArchitectureUITests";
+			productReference = 9F1E22F71C64F27F001BA633 /* Spike-Swift-MyArchitectureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F1E22CE1C64F27F001BA633 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ko2ic;
+				TargetAttributes = {
+					9F1E22D51C64F27F001BA633 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					9F1E22EB1C64F27F001BA633 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 9F1E22D51C64F27F001BA633;
+					};
+					9F1E22F61C64F27F001BA633 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 9F1E22D51C64F27F001BA633;
+					};
+				};
+			};
+			buildConfigurationList = 9F1E22D11C64F27F001BA633 /* Build configuration list for PBXProject "Spike-Swift-MyArchitecture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F1E22CD1C64F27F001BA633;
+			productRefGroup = 9F1E22D71C64F27F001BA633 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F1E22D51C64F27F001BA633 /* Spike-Swift-MyArchitecture */,
+				9F1E22EB1C64F27F001BA633 /* Spike-Swift-MyArchitectureTests */,
+				9F1E22F61C64F27F001BA633 /* Spike-Swift-MyArchitectureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F1E22D41C64F27F001BA633 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F1E232D1C64F4C3001BA633 /* Main.storyboard in Resources */,
+				9F1E22E31C64F27F001BA633 /* Assets.xcassets in Resources */,
+				9F1E232C1C64F4C3001BA633 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F1E22EA1C64F27F001BA633 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F1E22F51C64F27F001BA633 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		025EC8D900933E2B1D52880C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		12BA20C5E674FC95FA1FF546 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spike-Swift-MyArchitecture/Pods-Spike-Swift-MyArchitecture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		637D307D1EC074F64CBC0F06 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9EFCA365D17EFF34F1912B30 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spike-Swift-MyArchitecture/Pods-Spike-Swift-MyArchitecture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FCD0D851CA6D75B00C418B4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		CC33C4CF922D9C9E9469AE09 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spike-Swift-MyArchitecture/Pods-Spike-Swift-MyArchitecture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F315ECA3AEB95F3D03C14813 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spike-Swift-MyArchitecture/Pods-Spike-Swift-MyArchitecture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F1E22D21C64F27F001BA633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F1531581CB40DB0004A964B /* WeatherRepository.swift in Sources */,
+				9F7236E71CBAA66200EA2F68 /* ServiceLocator.swift in Sources */,
+				1E13CE4E1C8690A600042F60 /* WeatherService.swift in Sources */,
+				9F602FA71CB92C2E000F0504 /* Temperature.swift in Sources */,
+				9F7236E11CB94B4600EA2F68 /* AppRepositoryWrapper.swift in Sources */,
+				9F1E23221C64F4C3001BA633 /* AppDelegate.swift in Sources */,
+				9FCD0D8C1CABF9A500C418B4 /* ArrayTransform.swift in Sources */,
+				1E13CE4B1C86904800042F60 /* WeatherRepositoryImpl.swift in Sources */,
+				1E13CE551C86BBBE00042F60 /* Exception.swift in Sources */,
+				9FE2D3DD1CA5713F00FDDD6B /* TransactionTemplateImpl.swift in Sources */,
+				9F1531571CB40DB0004A964B /* Storable.swift in Sources */,
+				9F602FA51CB56713000F0504 /* TransactionTemplate.swift in Sources */,
+				9F1E232B1C64F4C3001BA633 /* FirstRouting.swift in Sources */,
+				1E13CE2A1C85684F00042F60 /* TransitionState.swift in Sources */,
+				9F1E23301C64F4C3001BA633 /* ThirdPresentor.swift in Sources */,
+				1E13CE421C859E4700042F60 /* WeatherEntity.swift in Sources */,
+				9F72370F1CBE7A4A00EA2F68 /* RealmWrapper.swift in Sources */,
+				9F7237111CC143B500EA2F68 /* Device.swift in Sources */,
+				1E13CE441C859F4200042F60 /* Weather.swift in Sources */,
+				9FCD0D891CAADDEB00C418B4 /* ApiCaller.swift in Sources */,
+				9F1E232E1C64F4C3001BA633 /* SecondPresentor.swift in Sources */,
+				9F1531591CB40DB0004A964B /* ServiceLocatorImpl.swift in Sources */,
+				9F1E232F1C64F4C3001BA633 /* SecondRouting.swift in Sources */,
+				9F1531561CB40DB0004A964B /* AppRepository.swift in Sources */,
+				1E13CE401C859E4700042F60 /* ForecastEntity.swift in Sources */,
+				9FCD0D871CAAD35400C418B4 /* AppRepositoryImpl.swift in Sources */,
+				9F8532501C9469AC002F8F5B /* Restable.swift in Sources */,
+				9F1E23311C64F4C3001BA633 /* ThirdRouting.swift in Sources */,
+				9FE2D3DF1CA580E300FDDD6B /* ApiErrorHandlerImpl.swift in Sources */,
+				9F602FA31CB56692000F0504 /* ApiErrorHandler.swift in Sources */,
+				9F1E232A1C64F4C3001BA633 /* FirstPresentor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F1E22E81C64F27F001BA633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7236E51CBAA31D00EA2F68 /* WeatherServiceTest.swift in Sources */,
+				1E95DB021CBB629800938AA9 /* WeatherTest.swift in Sources */,
+				9F1E22F11C64F27F001BA633 /* Spike_Swift_MyArchitectureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F1E22F31C64F27F001BA633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F1E22FC1C64F280001BA633 /* Spike_Swift_MyArchitectureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F1E22EE1C64F27F001BA633 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F1E22D51C64F27F001BA633 /* Spike-Swift-MyArchitecture */;
+			targetProxy = 9F1E22ED1C64F27F001BA633 /* PBXContainerItemProxy */;
+		};
+		9F1E22F91C64F280001BA633 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F1E22D51C64F27F001BA633 /* Spike-Swift-MyArchitecture */;
+			targetProxy = 9F1E22F81C64F280001BA633 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9F1E22FE1C64F280001BA633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F1E22FF1C64F280001BA633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F1E23011C64F280001BA633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE2A778BCC3ED2D2A163C45B /* Pods-Spike-Swift-MyArchitecture.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Spike-Swift-MyArchitecture/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ko2ic.Spike-Swift-MyArchitecture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Spike-Swift-MyArchitecture/Spike-Swift-MyArchitecture-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F1E23021C64F280001BA633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 255462B531EB1DA712FE8FC0 /* Pods-Spike-Swift-MyArchitecture.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Spike-Swift-MyArchitecture/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ko2ic.Spike-Swift-MyArchitecture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Spike-Swift-MyArchitecture/Spike-Swift-MyArchitecture-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		9F1E23041C64F280001BA633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Spike-Swift-MyArchitectureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = "ko2ic.Spike-Swift-MyArchitectureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spike-Swift-MyArchitecture.app/Spike-Swift-MyArchitecture";
+			};
+			name = Debug;
+		};
+		9F1E23051C64F280001BA633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Spike-Swift-MyArchitectureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = "ko2ic.Spike-Swift-MyArchitectureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spike-Swift-MyArchitecture.app/Spike-Swift-MyArchitecture";
+			};
+			name = Release;
+		};
+		9F1E23071C64F280001BA633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Spike-Swift-MyArchitectureUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ko2ic.Spike-Swift-MyArchitectureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Spike-Swift-MyArchitecture";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9F1E23081C64F280001BA633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Spike-Swift-MyArchitectureUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ko2ic.Spike-Swift-MyArchitectureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Spike-Swift-MyArchitecture";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F1E22D11C64F27F001BA633 /* Build configuration list for PBXProject "Spike-Swift-MyArchitecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F1E22FE1C64F280001BA633 /* Debug */,
+				9F1E22FF1C64F280001BA633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F1E23001C64F280001BA633 /* Build configuration list for PBXNativeTarget "Spike-Swift-MyArchitecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F1E23011C64F280001BA633 /* Debug */,
+				9F1E23021C64F280001BA633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F1E23031C64F280001BA633 /* Build configuration list for PBXNativeTarget "Spike-Swift-MyArchitectureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F1E23041C64F280001BA633 /* Debug */,
+				9F1E23051C64F280001BA633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F1E23061C64F280001BA633 /* Build configuration list for PBXNativeTarget "Spike-Swift-MyArchitectureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F1E23071C64F280001BA633 /* Debug */,
+				9F1E23081C64F280001BA633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F1E22CE1C64F27F001BA633 /* Project object */;
+}
